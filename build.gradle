@@ -1,0 +1,20 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'maven'
+
+group='de.hbrs.emorobot'
+version="0.1.0"
+
+repositories {
+	mavenCentral()
+	
+	maven {
+		url "http://clojars.org/repo"
+	}
+	
+}
+
+
+dependencies {
+	compile "org.clojars.processing-core:org.processing.core:1.5.1"
+}
